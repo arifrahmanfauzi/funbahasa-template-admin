@@ -143,8 +143,8 @@
               </li>
             </ul>
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-              <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo" /></a>
-              <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg"
+              <a class="navbar-brand brand-logo" href="index_admin.html"><img src="images/logo.svg" alt="logo" /></a>
+              <a class="navbar-brand brand-logo-mini" href="index_admin.html"><img src="images/logo-mini.svg"
                   alt="logo" /></a>
             </div>
             <ul class="navbar-nav navbar-nav-right">
@@ -212,57 +212,97 @@
                 <div class="sidebar-sticky">
                   <ul class="nav flex-column">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html">
-                        <i class="mdi mdi-file-document-box menu-icon"></i>
-                        <span class="menu-title">Dashboard</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="profil.html" class="nav-link">
-                        <i class="mdi mdi-cube-outline menu-icon"></i>
-                        <span class="menu-title">Profil</span>
-                        <i class="menu-arrow"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="karya.html" class="nav-link">
-                        <i class="mdi mdi-email menu-icon"></i>
-                        <span class="menu-title">Documentation</span></a>
-                    </li>
+                        <a class="nav-link" href="index_admin.html">
+                          <i class="mdi mdi-file-document-box menu-icon"></i>
+                          <span class="menu-title">Dashboard</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="user_admin.html" class="nav-link">
+                          <i class="mdi mdi-cube-outline menu-icon"></i>
+                          <span class="menu-title">List User</span>
+                          <i class="menu-arrow"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="karya_admin.html" class="nav-link">
+                          <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                          <span class="menu-title">List Karya</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="juri_admin.html" class="nav-link">
+                          <i class="mdi mdi-cube-outline menu-icon"></i>
+                          <span class="menu-title">Manajemen Juri</span>
+                          <i class="menu-arrow"></i>
+                        </a>
+                      </li>
                   </ul>
                 </div>
               </nav>
+
+           
               <div class="col-md-10">
               <div class="card">
                 <div class="card-body">
-                  <text class="card-title" style="color:rgb(58, 139, 206); font-size: 25px;">Form Unggah Karya</text>
-                  <form class="forms-sample pt-4">
-                    <div class="form-group">
-                      <label for="title">Title</label>
-                      <input type="text" class="form-control" id="title" placeholder="Title">
-                    </div>
-                    <div class="form-group">
-                      <label for="author">Author</label>
-                      <input type="text" class="form-control" id="Author" placeholder="Author">
-                    </div>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" class="form-control" id="Date" placeholder="Date">
-                      </div>
-                      <div class="form-group">
-                        <label for="excerpt">Excerpt</label>
-                        <textarea class="form-control" id="Excerpt" placeholder="Excerpt"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label for="editor">Editor Content</label>
-                        <div id="editor">
-                          <p>This is the editor content.</p>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                      <button class="btn btn-light">Cancel</button>
-                  </form>
+                    <!-- <div> -->
+                        <!-- TABEL JURI -->
+
+                        <text class="card-title" style="color:rgb(58, 139, 206); font-size: 25px;">Data Juri</text>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Email</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mohammad Malik Fajar</td>
+                                <td>mohammadmalikfajar17@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Asfilia Nova Anggraini</td>
+                                <td>asfiliaanggraini2911@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Aulia Ananda Salsabila</td>
+                                <td>auliaananda2112@gmail.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    <!-- </div> -->
+
+
+                     <!-- FORM JURI -->
+                     <!-- <div> -->
+                        <text class="card-title" style="color:rgb(58, 139, 206); font-size: 25px;">Form Manajemen Juri</text>
+                        <form class="forms-sample pt-4">
+                            <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="Email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">Repeat Password</label>
+                                <input type="password" class="form-control" id="Password2" placeholder="Repeat Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                            <button class="btn btn-light">Cancel</button>
+                        </form>
+                     <!-- </div> -->
+                  
                 </div>
               </div>
               </div>
