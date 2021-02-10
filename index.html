@@ -143,8 +143,8 @@
               </li>
             </ul>
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-              <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo" /></a>
-              <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg"
+              <a class="navbar-brand brand-logo" href="index_admin.html"><img src="images/logo.svg" alt="logo" /></a>
+              <a class="navbar-brand brand-logo-mini" href="index_admin.html"><img src="images/logo-mini.svg"
                   alt="logo" /></a>
             </div>
             <ul class="navbar-nav navbar-nav-right">
@@ -212,23 +212,30 @@
                 <div class="sidebar-sticky">
                   <ul class="nav flex-column">
                     <li class="nav-item">
-                      <a class="nav-link" href="index.html">
+                      <a class="nav-link" href="index_admin.html">
                         <i class="mdi mdi-file-document-box menu-icon"></i>
                         <span class="menu-title">Dashboard</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="profil.html" class="nav-link">
+                      <a href="user_admin.html" class="nav-link">
                         <i class="mdi mdi-cube-outline menu-icon"></i>
-                        <span class="menu-title">Profil</span>
+                        <span class="menu-title">List User</span>
                         <i class="menu-arrow"></i>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="karya.html" class="nav-link">
-                        <i class="mdi mdi-email menu-icon"></i>
-                        <span class="menu-title">Documentation</span></a>
+                      <a href="karya_admin.html" class="nav-link">
+                        <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                        <span class="menu-title">List Karya</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a href="juri_admin.html" class="nav-link">
+                          <i class="mdi mdi-cube-outline menu-icon"></i>
+                          <span class="menu-title">Manajemen Juri</span>
+                          <i class="menu-arrow"></i>
+                        </a>
+                      </li>
                   </ul>
                 </div>
               </nav>
@@ -238,26 +245,33 @@
                   <text class="card-title" style="color:rgb(58, 139, 206); font-size: 25px;">Form Unggah Karya</text>
                   <form class="forms-sample pt-4">
                     <div class="form-group">
-                      <label for="title">Title</label>
-                      <input type="text" class="form-control" id="title" placeholder="Title">
+                      <label for="judul">Judul Karya</label>
+                      <input type="text" class="form-control" id="judul" placeholder="Judul Karya">
                     </div>
                     <div class="form-group">
-                      <label for="author">Author</label>
-                      <input type="text" class="form-control" id="Author" placeholder="Author">
+                      <label for="kategori">Kategori Karya</label>
+                      <select class="form-control" id="kategori">
+                        <option value="Puisi">Puisi</option>
+                        <option value="2">Samsung</option>
+                        <option value="3">HTC</option>
+                        </select>
                     </div>
                     <div class="form-group">
+                      <label for="email">Alamat Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Alamat Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="nomor">Nomor Whatsapp</label>
+                      <input type="text" class="form-control" id="nomor" placeholder="Nomor Whatsapp">
+                    </div>
                       <div class="form-group">
-                        <label for="date">Date</label>
-                        <input type="date" class="form-control" id="Date" placeholder="Date">
-                      </div>
-                      <div class="form-group">
-                        <label for="excerpt">Excerpt</label>
-                        <textarea class="form-control" id="Excerpt" placeholder="Excerpt"></textarea>
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap"> 
                       </div>
                       <div class="form-group">
                         <label for="editor">Editor Content</label>
                         <div id="editor">
-                          <p>This is the editor content.</p>
+                          <p>Ini adalah editor content.</p>
                         </div>
                       </div>
                       <button type="submit" class="btn btn-primary mr-2">Submit</button>
