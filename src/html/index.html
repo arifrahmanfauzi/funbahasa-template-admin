@@ -498,9 +498,9 @@
                                     </div>
                                     <div class="form-group pb-2">
                                       <label for="editor">Editor Content</label>
-                                      <div id="editor">
+                                        <textarea class="cd ck-editor" style="min-height: 500px;" id="editor">
                                         <p>Ini adalah editor content.</p>
-                                      </div>
+                                      </textarea>
                                     </div>
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                     <button class="btn btn-light">Cancel</button>
@@ -559,7 +559,9 @@
     <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
     <script>
         ClassicEditor
-          .create(document.querySelector('#editor'))
+          .create(document.querySelector('#editor'),{
+              minHeight:'500px'
+          })
           .catch(error => {
             console.error(error);
           });
