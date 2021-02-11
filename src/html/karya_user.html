@@ -17,9 +17,9 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 </head>
 
 <body>
@@ -35,7 +35,8 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+        data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
@@ -204,21 +205,19 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
-                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                aria-expanded="false"><i class="fas fa-tachometer-alt"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Funners</span></li>
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">List Karya
+
+                        <li class="sidebar-item"> <a class="sidebar-link" href="karya_user.html"
+                                aria-expanded="false"><i class="fas fa-clipboard"></i></i><span class="hide-menu">List
+                                    Karya
                                 </span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="profil_user.html"
+                                aria-expanded="false"><i class="fas fa-address-card"></i><span
                                     class="hide-menu">Profil</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
-                                aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
-                                    class="hide-menu">Calendar</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -238,19 +237,20 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Chat</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">List Karya</h4>
                         <div class="d-flex align-items-center">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb m-0 p-0">
-                                    <li class="breadcrumb-item text-muted active" aria-current="page">Apps</li>
-                                    <li class="breadcrumb-item text-muted" aria-current="page">Chat</li>
+                                    <li class="breadcrumb-item"><a href="index.html" class="text-muted">Funners</a></li>
+                                    <li class="breadcrumb-item text-muted active" aria-current="page">List Karya</li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -266,42 +266,77 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <!-- basic table -->
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
                         <div class="card">
-                            <div class="card card-profile shadow">
-                                <div class="row justify-content-center">
-                                  <div class="card-profile-image">
-                                      <a href="#">
-                                        <img src="https://demos.creative-tim.com/argon-dashboard/assets/img/theme/team-4.jpg" class="rounded-circle" style="max-width: 200px; margin-bottom: 20px; margin-top: 30px;">
-                                      </a>
-                                  </div>
-                                </div>
-                                <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-                                  <div class="d-flex justify-content-center">
-                                    <a href="#" class="btn btn-sm btn-info " style="color: white;">Edit Profile</a>
-                                  </div>
-                                </div>
-                                <div class="card-body pt-0 pt-md-4">
-                                  <div class="text-center">
-                                    <h3>
-                                      Mohammad Malik Fajar
-                                    </h3>
-                                    <div class="h5 font-weight-300">
-                                      <i class="ni location_pin mr-2"></i>Mojokerto - Jawa Timur
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6 pb-2">
+                                        <div class="card text-center">
+                                            <div class="card-header">
+                                                Author
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Judul Karya</h5>
+                                                <p class="card-text">Karya</p>
+                                            </div>
+                                            <div class="card-footer text-muted">
+                                                Tanggal
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="h5">
-                                      <i class="ni business_briefcase-24 mr-2"></i>021-79076789
+                                    <div class="col-md-6 pb-2">
+                                        <div class="card text-center">
+                                            <div class="card-header">
+                                                Author
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Judul Karya</h5>
+                                                <p class="card-text">Karya</p>
+                                            </div>
+                                            <div class="card-footer text-muted">
+                                                Tanggal
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="pt-4">
-                                        <h5 class="pb-1">Jumlah Karya :</h5>
-                                        <h2>6</h2>
+                                    <div class="col-md-6 pb-2">
+                                        <div class="card text-center">
+                                            <div class="card-header">
+                                                Author
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Judul Karya</h5>
+                                                <p class="card-text">Karya</p>
+                                            </div>
+                                            <div class="card-footer text-muted">
+                                                Tanggal
+                                            </div>
+                                        </div>
                                     </div>
-                                    <hr class="my-4">
-                                    <p>mohammadmalikfajar17@gmail.com</p>
-                                  </div>
+                                    <div class="col-md-6 pb-2">
+                                        <div class="card text-center">
+                                            <div class="card-header">
+                                                Author
+                                            </div>
+
+                                            <div class="card-body">
+                                                <h5 class="card-title">Judul Karya</h5>
+                                                <p class="card-text">Karya</p>
+                                            </div>
+                                            <div class="card-footer text-muted">
+                                                Tanggal
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -312,7 +347,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer text-center">
+            <footer class="footer text-center text-muted">
                 All Rights Reserved by Adminmart. Designed and Developed by <a
                     href="https://wrappixel.com">WrapPixel</a>.
             </footer>
@@ -342,21 +377,6 @@
     <script src="../dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="../dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <script>
-        $(function () {
-            $(document).on('keypress', "#textarea1", function (e) {
-                if (e.keyCode == 13) {
-                    var id = $(this).attr("data-user-id");
-                    var msg = $(this).val();
-                    msg = msg_sent(msg);
-                    $("#someDiv").append(msg);
-                    $(this).val("");
-                    $(this).focus();
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

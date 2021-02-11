@@ -210,22 +210,19 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="index.html"
-                                aria-expanded="false"><i data-feather="home" class="feather-icon"></i><span
+                                aria-expanded="false"><i class="fas fa-tachometer-alt"></i><span
                                     class="hide-menu">Dashboard</span></a></li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Funners</span></li>
 
-                        <li class="sidebar-item"> <a class="sidebar-link" href="ticket-list.html"
-                                aria-expanded="false"><i data-feather="tag" class="feather-icon"></i><span
-                                    class="hide-menu">List Karya
+                        <li class="sidebar-item"> <a class="sidebar-link" href="karya_user.html"
+                                aria-expanded="false"><i class="fas fa-clipboard"></i></i><span class="hide-menu">List
+                                    Karya
                                 </span></a>
                         </li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-chat.html"
-                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="profil_user.html"
+                                aria-expanded="false"><i class="fas fa-address-card"></i><span
                                     class="hide-menu">Profil</span></a></li>
-                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="app-calendar.html"
-                                aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
-                                    class="hide-menu">Calendar</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -257,7 +254,8 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            <select
+                                class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
                                 <option selected>Aug 19</option>
                                 <option value="1">July 19</option>
                                 <option value="2">Jun 19</option>
@@ -278,32 +276,32 @@
                         <div class="card">
                             <div class="card-body">
                                 <form class="forms-sample">
-                                  <div class="form-group pb-2">
-                                    <label for="judul">Judul Karya</label>
-                                    <input type="text" class="form-control" id="judul" placeholder="Judul Karya">
-                                  </div>
-                                  <div class="form-group pb-2">
-                                    <label for="kategori">Kategori Karya</label>
-                                    <select class="form-control" id="kategori">
-                                      <option value="Puisi">Puisi</option>
-                                      <option value="2">Samsung</option>
-                                      <option value="3">HTC</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group pb-2">
-                                    <label for="email">Alamat Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Alamat Email">
-                                  </div>
-                                  <div class="form-group pb-2">
-                                    <label for="nomor">Nomor Whatsapp</label>
-                                    <input type="text" class="form-control" id="nomor" placeholder="Nomor Whatsapp">
-                                  </div>
                                     <div class="form-group pb-2">
-                                      <label for="nama">Nama Lengkap</label>
-                                      <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap"> 
+                                        <label for="judul">Judul Karya</label>
+                                        <input type="text" class="form-control" id="judul" placeholder="Judul Karya">
                                     </div>
                                     <div class="form-group pb-2">
-                                      <label for="editor">Editor Content</label>
+                                        <label for="kategori">Kategori Karya</label>
+                                        <select class="form-control" id="kategori">
+                                            <option value="Puisi">Puisi</option>
+                                            <option value="2">Samsung</option>
+                                            <option value="3">HTC</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group pb-2">
+                                        <label for="email">Alamat Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Alamat Email">
+                                    </div>
+                                    <div class="form-group pb-2">
+                                        <label for="nomor">Nomor Whatsapp</label>
+                                        <input type="text" class="form-control" id="nomor" placeholder="Nomor Whatsapp">
+                                    </div>
+                                    <div class="form-group pb-2">
+                                        <label for="nama">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
+                                    </div>
+                                    <div class="form-group pb-2">
+                                        <label for="editor">Editor Content</label>
                                         <textarea class="cd ck-editor" style="min-height: 500px;" id="editor">
                                         <p>Ini adalah editor content.</p>
                                       </textarea>
@@ -365,13 +363,13 @@
     <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
     <script>
         ClassicEditor
-          .create(document.querySelector('#editor'),{
-              minHeight:'500px'
-          })
-          .catch(error => {
-            console.error(error);
-          });
-      </script>
+            .create(document.querySelector('#editor'), {
+                minHeight: '500px'
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 
 </html>
