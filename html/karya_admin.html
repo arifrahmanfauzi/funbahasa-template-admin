@@ -57,17 +57,19 @@
                         <a href="index_admin.html">
                             <b class="logo-icon">
                                 <!-- Dark Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                <!-- <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" /> -->
                                 <!-- Light Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="light-logo" />
+                                <!-- <img src="../assets/images/logo-icon.png" alt="homepage" class="light-logo" /> -->
                             </b>
                             <!--End Logo icon -->
                             <!-- Logo text -->
                             <span class="logo-text">
                                 <!-- dark Logo text -->
-                                <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                                <!-- <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" /> -->
+                                <img src="../assets/images/funbahasa-logo.svg" alt="funbahasa-logo" class="dark-logo"
+                                    width="200" height="100">
                                 <!-- Light Logo text -->
-                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                                <!-- <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /> -->
                             </span>
                         </a>
                     </div>
@@ -179,7 +181,7 @@
                                 <img src="../assets/images/users/profile-pic.jpg" alt="user" class="rounded-circle"
                                     width="40">
                                 <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
-                                        class="text-dark">Jason Doe</span> <i data-feather="chevron-down"
+                                        class="text-dark">Admin FunBahasa</span> <i data-feather="chevron-down"
                                         class="svg-icon"></i></span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
@@ -275,16 +277,16 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <text class="card-title" style="color:rgb(58, 139, 206); font-size: 25px;">Naskah Umum</text>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <text style="color:rgb(58, 139, 206); font-size: 25px;">Naskah Umum</text>
                                         <table class="table table-striped">
                                             <thead>
                                                 <tr>
                                                     <th scope="col">No</th>
-                                                    <th scope="col">Nama</th>
+                                                    <th scope="col">Judul Karya</th>
                                                     <th scope="col">Tanggal</th>
                                                     <th scope="col">Aksi</th>
                                                 </tr>
@@ -292,39 +294,80 @@
                                             <tbody>
                                                 <tr>
                                                     <th scope="row">1</th>
-                                                    <td>Mohammad Malik Fajar</td>
-                                                    <td>17-04-2000</td>
+                                                    <td>Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</td>
+                                                    <td>17-04-2020</td>
                                                     <td>
-                                                        <button class="btn btn-primary" type="button">Detail
+                                                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Detail
                                                             Karya</button>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">2</th>
-                                                    <td>Asfilia Nova Anggraini</td>
-                                                    <td>29-11-1999</td>
+                                                    <td>Sajak Lelaki Ibu</td>
+                                                    <td>29-11-2020</td>
                                                     <td>
-                                                        <button class="btn btn-primary" type="button">Detail
+                                                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Detail
                                                             Karya</button>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">3</th>
-                                                    <td>Aulia Ananda Salsabila</td>
-                                                    <td>21-12-1999</td>
+                                                    <td>Zohrah</td>
+                                                    <td>21-12-2020</td>
                                                     <td>
-                                                        <button class="btn btn-primary" type="button">Detail
+                                                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Detail
                                                             Karya</button>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="col-md-6">
-                                        <iframe
-                                            src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
-                                            width="530" height="700">
-                                        </iframe>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <text class="card-title"
+                                            style="color:rgb(58, 139, 206); font-size: 25px;">Naskah FPPN</text>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">No</th>
+                                                    <th scope="col">Judul Karya</th>
+                                                    <th scope="col">Tanggal</th>
+                                                    <th scope="col">Aksi</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Matahari Membelah Tubuhmu Dan Mereka Tak Tahu Itu</td>
+                                                    <td>17-04-2020</td>
+                                                    <td>
+                                                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Detail
+                                                            Karya</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Sajak Lelaki Ibu</td>
+                                                    <td>29-11-2020</td>
+                                                    <td>
+                                                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Detail
+                                                            Karya</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Zohrah</td>
+                                                    <td>21-12-2020</td>
+                                                    <td>
+                                                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModal">Detail
+                                                            Karya</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -332,64 +375,7 @@
                     </div>
                 </div>
 
-                <div class="row-4">
-                    <div class="col-lg-14">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <text class="card-title" style="color:rgb(58, 139, 206); font-size: 25px;">Naskah FPPN</text>
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">No</th>
-                                                    <th scope="col">Nama</th>
-                                                    <th scope="col">Tanggal</th>
-                                                    <th scope="col">Aksi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mohammad Malik Fajar</td>
-                                                    <td>17-04-2000</td>
-                                                    <td>
-                                                        <button class="btn btn-primary" type="button">Detail
-                                                            Karya</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Asfilia Nova Anggraini</td>
-                                                    <td>29-11-1999</td>
-                                                    <td>
-                                                        <button class="btn btn-primary" type="button">Detail
-                                                            Karya</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Aulia Ananda Salsabila</td>
-                                                    <td>21-12-1999</td>
-                                                    <td>
-                                                        <button class="btn btn-primary" type="button">Detail
-                                                            Karya</button>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <iframe
-                                            src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'
-                                            width="530" height="700">
-                                        </iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <!-- </div> -->
                 <!-- *************************************************************** -->
                 <!-- End Top Leader Table -->
@@ -408,6 +394,57 @@
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Karya : Rasyid Yudhistira</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="pb-4">MATAHARI MEMBELAH TUBUHMU DAN MEREKA TAK TAHU ITU</h3>
+                        <pre>
+Kenapa terburu-buru
+untuk menunjuk ke atas
+dan bertanya kapan akan dibelah?
+
+          Kau tentu tahu
+          siapa siapa
+          yang menunggu itu.
+
+Kau hanya lupa
+tidak semua mengerti
+cara untuk menjadi ahli duka
+yang gemar beradu tabah
+
+Kau hanya cemas
+barangkali ada yang diam-diam
+menulis riwayat doamu
+
+Kau hanya gusar
+jika engkau bertemu cermin
+yang pandai menafsir tiap luka.
+ 
+          Kau takut untuk mengurungkan niatmu
+
+Matahari membelah tiap dukamu
+dan apapun yang dibisikkan—menjadikan matamu makin nanar.
+Matahari membelah tubuhmu
+dan menemukan huruf-huruf yang hilang.
+
+          Mereka tak tahu itu dan hanya ingin terlibat saja.
+                        </pre>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- ============================================================== -->
         <!-- End Page wrapper  -->
