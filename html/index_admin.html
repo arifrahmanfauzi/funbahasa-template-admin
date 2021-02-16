@@ -216,16 +216,15 @@
                         <li class="nav-small-cap"><span class="hide-menu">Applications</span></li>
 
                         <li class="sidebar-item"> <a class="sidebar-link" href="user_admin.html"
-                                aria-expanded="false"><i class="fas fa-users"></i><span
-                                    class="hide-menu">List User
+                                aria-expanded="false"><i class="fas fa-users"></i><span class="hide-menu">List User
                                 </span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="karya_admin.html"
                                 aria-expanded="false"><i class="fas fa-clipboard"></i><span fas fa-list
                                     class="hide-menu">List Karya</span></a></li>
                         <li class="sidebar-item"> <a class="sidebar-link" href="juri_admin.html"
-                                aria-expanded="false"><i class="fas fa-list"></i><span
-                                    class="hide-menu">Manajemen Juri</span></a>
+                                aria-expanded="false"><i class="fas fa-list"></i><span class="hide-menu">Manajemen
+                                    Juri</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -265,59 +264,77 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
-                
+
 
                 <div class="row">
-                <div class="col-12">
-                    <div class="card">
-                      <div class="card-body">
-                        <form class="pt-4 forms-sample">
-                          <div class="form-group">
-                            <label for="judul">Judul Karya</label>
-                            <input type="text" class="form-control" id="judul" placeholder="Judul Karya">
-                          </div>
-                          <div class="form-group">
-                            <label for="kategori">Kategori Karya</label>
-                            <select class="form-control" id="kategori">
-                              <option value="Puisi">Puisi</option>
-                              <option value="2">Samsung</option>
-                              <option value="3">HTC</option>
-                              </select>
-                          </div>
-                          <div class="form-group">
-                            <label for="email">Alamat Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Alamat Email">
-                          </div>
-                          <div class="form-group">
-                            <label for="nomor">Nomor Whatsapp</label>
-                            <input type="text" class="form-control" id="nomor" placeholder="Nomor Whatsapp">
-                          </div>
-                            <div class="form-group">
-                              <label for="nama">Nama Lengkap</label>
-                              <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap"> 
-                            </div>
-                            <div class="form-group">
-                              <label>File upload</label>
-                              <div class="input-group col-xs-12">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="file">
-                                    <label class="custom-file-label" for="file">Choose file</label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="pb-2 form-group">
-                                <label for="editor">Editor Content</label>
-                                  <textarea class="cd ck-editor" style="min-height: 500px;" id="editor">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="pt-4 forms-sample">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="pb-2 form-group">
+                                                <label for="judul">Judul Karya</label>
+                                                <input type="text" class="form-control" id="judul"
+                                                    placeholder="Judul Karya">
+                                            </div>
+                                            <div class="pb-2 form-group">
+                                                <label for="kategori">Kategori Karya</label>
+                                                <select class="form-control" id="kategori">
+                                                    <option value="Puisi">Puisi</option>
+                                                    <option value="2">Samsung</option>
+                                                    <option value="3">HTC</option>
+                                                </select>
+                                            </div>
+                                            <div class="pb-2 form-group">
+                                                <label for="email">Alamat Email</label>
+                                                <input type="email" class="form-control" id="email"
+                                                    placeholder="Alamat Email">
+                                            </div>
+                                            <div class="pb-2 form-group">
+                                                <label for="nomor">Nomor Whatsapp</label>
+                                                <input type="text" class="form-control" id="nomor"
+                                                    placeholder="Nomor Whatsapp">
+                                            </div>
+                                            <div class="pb-2 form-group">
+                                                <label for="nama">Nama Lengkap</label>
+                                                <input type="text" class="form-control" id="nama"
+                                                    placeholder="Nama Lengkap">
+                                            </div>
+                                            <div class="pb-2 form-group">
+                                                <label>File upload</label>
+                                                <div class="input-group col-xs-12">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input" id="file">
+                                                        <label class="custom-file-label" for="file">Choose file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="card" style="width: 100%; height: 100%;">
+                                                <div class="card-header">
+                                                    Catatan
+                                                  </div>
+                                                <div class="card-body">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pb-2 form-group">
+                                        <label for="editor">Editor Content</label>
+                                        <textarea class="cd ck-editor" style="min-height: 500px;" id="editor">
                                   <p>Ini adalah editor content.</p>
                                 </textarea>
-                              </div>
-                            <button type="submit" class="mr-2 btn btn-primary">Submit</button>
-                            <button class="btn btn-light">Cancel</button>
-                        </form>
-                      </div>
+                                    </div>
+                                    <button type="submit" class="mr-2 btn btn-primary">Submit</button>
+                                    <button class="btn btn-light">Cancel</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <!-- *************************************************************** -->
                 <!-- End Top Leader Table -->
                 <!-- *************************************************************** -->
@@ -368,13 +385,13 @@
     <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
     <script>
         ClassicEditor
-          .create(document.querySelector('#editor'),{
-              minHeight:'500px'
-          })
-          .catch(error => {
-            console.error(error);
-          });
-      </script>
+            .create(document.querySelector('#editor'), {
+                minHeight: '500px'
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 
 </html>
